@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/SignalStrength.svg?style=flat)](http://cocoapods.org/pods/SignalStrength)
 [![Platform](https://img.shields.io/cocoapods/p/SignalStrength.svg?style=flat)](http://cocoapods.org/pods/SignalStrength)
 
+## Preview
+
 ![alt tag](http://tanner.xyz/signal-strength.gif)
 
 ## Usage
