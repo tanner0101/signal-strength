@@ -9,10 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
-UIKit
-
 ## Installation
 
 SignalStrength is available through [CocoaPods](http://cocoapods.org). To install
@@ -24,13 +20,13 @@ pod "SignalStrength"
 
 ## Usage
 
-Add a view to your Storyboard and set the class to `SignalStrengthView`. The view is `@IBDesignable` so you should immediately see the dots and intrinsic sizing.
+Add a view to your Storyboard and set the class to `SignalStrengthView`. The view is `@IBDesignable` so you should immediately see the signal strength indicators and intrinsic sizing.
 
-Add an outlet to your ViewController to modify the SignalStrengthView's `signal` and `flipped` properties.
+Add an outlet from the `SignalStrengthView` to your ViewController to modify the `SignalStrengthView`'s `signal` and `flipped` properties.
 
 ### Signal
 
-This `enum` property changes how many dots are filled in on the view. Use the example application provided in the CocoaPod to view how different SignalStrength values affect the view.
+This `enum` property changes how many dots are filled in on the view. Use the example application provided in the CocoaPod to view how different `SignalStrength` values affect the view.
 
 ```swift
 enum SignalStrength {
