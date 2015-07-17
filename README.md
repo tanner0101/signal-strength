@@ -45,6 +45,10 @@ enum SignalStrength {
 
 This `Bool` property changes from which side the dots will begin to fill in or empty. Setting flipped to true for right aligned views is recommended.
 
+## Customization
+
+`sizing` and `spacing` constants can be modified at compile time in the `SignalStrengthDotView` class.
+
 ## Author
 
 Tanner Nelson, <me@tanner.xyz>
