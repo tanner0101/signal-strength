@@ -7,7 +7,7 @@
 
 ## Preview
 
-![alt tag](http://tanner.xyz/signal-strength.gif)
+![alt tag](http://tanner.xyz/signal-strength.gif?cache=29384872)
 
 ## Usage
 
