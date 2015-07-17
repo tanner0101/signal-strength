@@ -1,0 +1,6 @@
+framework module SignalStrength {
+  umbrella header "Pods-SignalStrength_Example-SignalStrength-umbrella.h"
+
+  export *
+  module * { export * }
+}

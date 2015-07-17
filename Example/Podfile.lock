@@ -1,0 +1,14 @@
+PODS:
+  - SignalStrength (0.1.0)
+
+DEPENDENCIES:
+  - SignalStrength (from `../`)
+
+EXTERNAL SOURCES:
+  SignalStrength:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SignalStrength: 8961864987befd37305cdfe540ded7045be4fdc5
+
+COCOAPODS: 0.37.2

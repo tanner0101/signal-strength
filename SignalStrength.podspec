@@ -9,20 +9,15 @@
 
 Pod::Spec.new do |s|
   s.name             = "SignalStrength"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of SignalStrength."
-  s.description      = <<-DESC
-                       An optional longer description of SignalStrength
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SignalStrength"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.version          = "1.0.0"
+  s.summary          = "iOS 7 inspirsed signal strength view."
+  s.description      = "Display signal strength in your app using this iOS 7 inspired view. This is great for showing the RSSI of beacons, nearby bluetooth objects, or other devices."
+  s.homepage         = "https://github.com/tannernelson/SignalStrength"
+  s.screenshots     = "http://tanner.xyz/signal-strength-1.png"
   s.license          = 'MIT'
   s.author           = { "Tanner Nelson" => "tanner@bluebite.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SignalStrength.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/tannernelson/SignalStrength.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/the_teet'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -31,8 +26,8 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'SignalStrength' => ['Pod/Assets/*.png']
   }
+  s.frameworks = 'UIKit'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
