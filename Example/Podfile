@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'SignalStrength_Example', :exclusive => true do
+  pod "SignalStrength", :path => "../"
+end
+
+target 'SignalStrength_Tests', :exclusive => true do
+  pod "SignalStrength", :path => "../"
+
+  
+end
