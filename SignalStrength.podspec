@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SignalStrength"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "iOS 7 inspirsed signal strength view."
   s.description      = "Display signal strength in your app using this iOS 7 inspired view. This is great for showing the RSSI of beacons, nearby bluetooth objects, or other devices."
   s.homepage         = "https://github.com/tannernelson/SignalStrength"

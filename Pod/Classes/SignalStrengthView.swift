@@ -1,9 +1,9 @@
 //
 //  SignalStrengthView.swift
-//  Tanner Nelson
+//  Decode
 //
-//  Created by Tanner Nelson <me@tanner.xyz> on 7/17/15.
-//  Copyright (c) 2015 Tanner Nelson. All rights reserved.
+//  Created by Tanner Nelson on 7/17/15.
+//  Copyright (c) 2015 Blue Bite. All rights reserved.
 //
 
 import UIKit
@@ -19,16 +19,18 @@ public class SignalStrengthView: UIView {
     var dot5: SignalStrengthDotView!
     
     //MARK: Properties
+    public var color = UIColor.blackColor() {
+        didSet {
+            self.update()
+        }
+    }
+    
     public var signal: SignalStrength = .Unknown {
         didSet {
             self.update()
         }
     }
-    public var flipped: Bool = true {
-        didSet {
-            self.update()
-        }
-    }
+    public var flipped: Bool = true
     
     //MARK: Enumerations
     public enum SignalStrength {
@@ -60,6 +62,16 @@ public class SignalStrengthView: UIView {
     
     //MARK: Functions
     func update() {
+        if dot1 == nil {
+            //attempt to update before initialization
+            return
+        }
+        
+        dot1.color = self.color
+        dot2.color = self.color
+        dot3.color = self.color
+        dot4.color = self.color
+        dot5.color = self.color
         
         dot1.on = true
         dot2.on = true
@@ -134,20 +146,26 @@ class SignalStrengthDotView: UIView {
         }
     }
     
+    var color = UIColor.blackColor() {
+        didSet {
+            self.update()
+        }
+    }
+    
     //MARK: Class
     class func addAfter(leadingView: UIView, inView: UIView) -> SignalStrengthDotView {
         return self.addAfter(leadingView, inView: inView, lastView: nil)
     }
     
     class func addAfter(leadingView: UIView, inView superview: UIView, lastView: UIView?) -> SignalStrengthDotView {
-        var dot = SignalStrengthDotView()
+        let dot = SignalStrengthDotView()
         
         
         dot.layer.borderColor = UIColor.blackColor().CGColor
         dot.layer.borderWidth = 0.5
         
         dot.on = false
-        dot.setTranslatesAutoresizingMaskIntoConstraints(false)
+        dot.translatesAutoresizingMaskIntoConstraints = false
         
         superview.addSubview(dot)
         
@@ -188,8 +206,10 @@ class SignalStrengthDotView: UIView {
     
     //MARK: Functions
     func update() {
+        self.layer.borderColor = self.color.CGColor
+        
         if self.on {
-            self.backgroundColor = UIColor.blackColor()
+            self.backgroundColor = self.color
         } else {
             self.backgroundColor = UIColor.clearColor()
         }

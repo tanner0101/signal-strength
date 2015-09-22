@@ -44,6 +44,9 @@ enum SignalStrength {
 
 }
 ```
+### Color
+
+This `UIColor` property changes the background color of the dots. This is great for inverting the color of the SignalStrengthView if it is in a selected UITableViewCell.
 
 ### Flipped
 
