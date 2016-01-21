@@ -7,7 +7,7 @@
 
 ## Preview
 
-![alt tag](http://tanner.xyz/signal-strength.gif?cache=29384872)
+![alt tag](https://cloud.githubusercontent.com/assets/1342803/12491628/208d872e-c04a-11e5-8ca4-b5e7266aee05.gif)
 
 ## Usage
 
